@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;;
+    color: white;
+}
+
+.navbar{
+    background-color: rgba(0,0,0,0.3);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.left{
+    margin-left: 1rem;
+    font-size: 1.4rem;
+}
+.right{
+    margin-right: 2rem;
+}
+.right ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.right ul li a{
+    text-decoration: none;
+    color: white;
+}
+.clear{
+    clear: both;
+}
+.hero{
+    background-image: url("../images/hero-bg.jpg");
+    height: 100vh;
+    width: 100%;
+}
+.hero-left{
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+}
+.hero-left #name{
+    padding-top: 0.5rem;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+.hero-left #competency{
+    padding-top: 0.5rem;
+    font-size: 1.3rem;
+}
