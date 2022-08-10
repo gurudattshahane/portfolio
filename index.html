@@ -7,51 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gurudatt Profile</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="js/script.js" defer></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="#" class="nav-branding">Profile</a>
+        <h1 class="nav-branding"><a href="#">Profile</a></h1>
+
+        <input type="checkbox" id="hamburger">
         <nav class="navbar">
-
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <ul>
+                <li class="active"><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-
             <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <label for="hamburger" class="bar"></label>
             </div>
-
         </nav>
     </header>
-    <main>
+    <main id="Home">
         <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h2 class="hero-title">
-                        <span>Hello I'm</span>
-                        <strong>Gurudatt Shahane</strong>
-                        a Full Stack Developer
-                    </h2>
+            <div class="hero-banner">
+                <div class="banner-images">
+                    <img src="./images/cpp-icon.png" alt="CPP Icon">
+                    <img src="./images/java-icon.png" alt="Java Icon">
+                    <img src="./images/python-icon.png" alt="Python Icon">
+                    <img src="./images/html-icon.png" alt="HTML Icon"><img src="./images/css-icon.png"
+                        alt="CSS Icon"><img src="./images/js-icon.png" alt="JS Icon">
                 </div>
-                <div class="hero-banner">
-                    <div class="banner-images">
-                        <img src="./images/cpp-icon.png" alt="CPP Icon">
-                        <img src="./images/java-icon.png" alt="Java Icon">
-                        <img src="./images/python-icon.png" alt="Python Icon">
-                        <img src="./images/html-icon.png" alt="HTML Icon"><img src="./images/css-icon.png" alt="CSS Icon"><img src="./images/js-icon.png" alt="JS Icon">
-                    </div>
-                </div>
+            </div>
+            <div class="hero-content">
+                <h2 class="hero-title">
+                    <span>Hello I'm</span><br>
+                    <Strong>Gurudatt Shahane</Strong><br>
+                    a Full Stack Developer
+                </h2>
             </div>
         </section>
     </main>
