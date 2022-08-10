@@ -63,8 +63,6 @@ header {
     top: 1rem;
     right: 1rem;
     cursor: pointer;
-    /* border: 1px solid white;
-    border-radius: 6px; */
     padding: 5px;
     display: none;
 }
@@ -204,15 +202,12 @@ header {
     }
 }
 
-@media screen and (max-width: 420px) {
-    .hero-left #name {
-        font-size: 1.7rem;
-    }
+@media screen and (max-width: 480px) {
 
-    .hero-left #competency {
-        font-size: 1rem;
+    header{
+        padding-block: 1rem;
     }
-
+    
     .hamburger {
         display: block;
         z-index: 10;
@@ -255,23 +250,28 @@ header {
     .hero{
         overflow: auto;
     }
-
+    
     .container {
         width: 90%;
-        margin-top: 15%;
         padding: 0;
         grid-template-areas: "banner banner"
             "content content";
     }
     .hero-content{
-        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .hero-title{
+        font-size: 1rem;
+    }
+    .hero-title span{
+        font-size: 1rem;
+    }
+    .hero-title strong{
+        font-size: 1.7rem;
     }
     .hero-content,
     .hero-banner {
         width: 90%;
-    }
-    .hero-title strong{
-        font-size: 2rem;
     }
     .banner-images {
         width: 200px;
