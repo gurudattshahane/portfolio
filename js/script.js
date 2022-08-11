@@ -8,3 +8,10 @@ links.forEach(link => {
         checkbox.checked = false;
     })
 });
+
+const skills_data = document.querySelectorAll('.skills-data');
+const skills_progress_tags = document.querySelectorAll('.skills-progress');
+for(let i=0; i < skills_data.length; i++){
+    skills_progress_tags[i].style.width = skills_data[i].value + "%";
+}
+
