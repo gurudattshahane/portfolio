@@ -3,7 +3,11 @@ const links = document.querySelectorAll('.navbar ul li');
 const checkbox = document.querySelector("#hamburger");
 
 links.forEach(link => {
-    link.addEventListener('click', ()=>{
+    link.addEventListener('click', (e)=>{
+        setTimeout(()=>{
+            // uses HTML5 history API to manipulate the location bar
+            history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+          }, 1);
         links.forEach(li =>{ li.classList.remove("active");});
         link.classList.add("active");
         checkbox.checked = false;
@@ -23,7 +27,6 @@ window.onscroll = function () {
     }
     
     // Changing background of navbar list based on position
-    console.log(window.scrollY);
     if(window.scrollY <= (window.innerHeight/2)){
         links.forEach(li =>{ li.classList.remove("active");});
         links[0].classList.add('active');
