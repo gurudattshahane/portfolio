@@ -73,7 +73,7 @@ header a {
 .hamburger {
     position: absolute;
     right: 6vw;
-    top: 2vh;
+    top: 1vh;
     /* border: 1px solid white; */
     padding-block: 25px;
     padding-inline: 20px;
