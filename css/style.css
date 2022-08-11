@@ -56,12 +56,15 @@ header a {
     border-bottom: 1px solid white;
     text-align: center;
     font-size:1.7rem;
+    transition: color 250ms ease-in-out;
 }
 
 .navbar ul li:last-child a{
     border: none;
 }
-
+.navbar ul li a:hover{
+    color: rgba(0,0,0, 0.8);
+}
 .active{
     background-color: rgba(0,0,0, 0.5);
 }
@@ -264,7 +267,7 @@ main {
 
     .navbar ul li a {
         border: none;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .active{
         background: transparent;
