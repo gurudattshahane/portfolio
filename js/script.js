@@ -4,10 +4,12 @@ const checkbox = document.querySelector("#hamburger");
 
 links.forEach(link => {
     link.addEventListener('click', (e)=>{
+        
         setTimeout(()=>{
             // uses HTML5 history API to manipulate the location bar
             history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
           }, 1);
+          
         links.forEach(li =>{ li.classList.remove("active");});
         link.classList.add("active");
         checkbox.checked = false;
@@ -27,12 +29,16 @@ window.onscroll = function () {
     }
     
     // Changing background of navbar list based on position
-    if(window.scrollY <= (window.innerHeight/2)){
+    let sections = document.querySelectorAll('section');
+    if(window.scrollY <= (sections[0].scrollHeight/2)){
         links.forEach(li =>{ li.classList.remove("active");});
         links[0].classList.add('active');
-    }else{
+    }else if(window.scrollY <= 0.9*(sections[0].scrollHeight + sections[1].scrollHeight/2)){
         links.forEach(li =>{ li.classList.remove("active");});
-        links[3].classList.add('active');
+        links[1].classList.add('active');
+    }else if(window.scrollY <= (sections[0].scrollHeight+ sections[1].scrollHeight + sections[2].scrollHeight/2)){
+        links.forEach(li =>{ li.classList.remove("active");});
+        links[2].classList.add('active');
     }
 };
 
